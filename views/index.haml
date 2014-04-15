@@ -1,0 +1,71 @@
+.intro.nightly
+  .topbar.clearfix
+    .wrapper
+      .logo
+        %img{src: '/images/logo.png'}
+      .phone
+        - phones = ["(495) 540-58-46", "(495) 662-96-24", "(495) 662-47-54", "(495) 540-58-34", "(495) 660-36-89"]
+        - sample_phone = phones.sample
+        = sample_phone
+        .small
+          - if sample_phone == '(495) 662-96-24'
+            Режим работы c 10:00 до 20:00
+          - else
+            - if Time.now.wday == 0 or Time.now.wday == 6
+              Режим работы c 10:00 до 16:00
+            - else
+              Режим работы c 10:00 до 19:00
+  .wrapper
+    .title.white
+      Только этой ночью
+
+    .subtitle
+      Дополнительная скидка 10%
+      %br
+      на все пластиковые окна Калева
+
+    .subsubtitle
+      Оставьте заявку сейчас и узнайте точную стоимость окон Калева
+      %br
+      в вашей квартире уже завтра утром!
+
+
+    .button.show-form Оставить заявку
+
+
+
+= haml :why
+= haml :models
+= haml :samples
+
+
+.form-area
+  .wrapper
+    .form-title
+      Чтобы узнать точную стоимость окна,
+    .form-subtitle
+      Оставьте заявку на выезд менеджера-консультанта сегодня
+      %br
+      и получите бесплатную москитную сетку в подарок
+
+    .form
+      %input{type: :text, name: :username, placeholder: 'Ваше имя'}
+      %input{type: :text, name: :username, placeholder: 'Ваш телефон'}
+      .button.send-form{inline_form: :true} Оставить заявку
+
+
+= haml :contacts
+
+
+.footer
+  .wrapper
+    .left
+      ООО «Качественные окна»
+      %br
+      Дилер компании Kaleva (Москва)
+      %br
+      Статус — Центральный офис
+
+    .right
+      %a{href: 'http://abardacha.ru', target: '_blank'}
+        %img{src: '/images/abardacha.jpg'}

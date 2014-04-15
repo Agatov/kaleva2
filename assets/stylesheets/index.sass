@@ -1,0 +1,277 @@
+@font-face
+  font-family: 'GothamProMed'
+  src: url('/fonts/GothaProMed.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'GothamProReg'
+  src: url('/fonts/GothaProReg.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'GothamProBold'
+  src: url('/fonts/GothaProBol.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'GothamProItalic'
+  src: url('/fonts/GothaProIta.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+body
+  padding: 0px
+  margin: 0px
+  font-family: 'GothamProReg', 'Helvetica', 'Arial', sans-serif
+  background: #fff
+  min-width: 1024px
+
+
+.wrapper
+  width: 960px
+  margin: 0px auto
+
+.clearfix
+  &:after
+    clear: both
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+.relative
+  position: relative
+
+.inheritance-height
+  height: 100%
+
+.button
+  width: 260px
+  height: 60px
+
+  text-align: center
+  line-height: 60px
+
+  background: #0082c8
+  background: -webkit-linear-gradient(top, #30b1db, #0082c8)
+  background: -webkit-linear-gradient(top, #30b1db, #0082c8)
+  background: -moz-linear-gradient(top, #30b1db, #0082c8)
+  background: -o-linear-gradient(top, #30b1db, #0082c8)
+  font-family: 'GothamProBold'
+  text-transform: uppercase
+  font-size: 16px
+  color: #fff
+
+  border-radius: 10px
+
+  cursor: pointer
+
+  -webkit-transition: all 0.15s
+
+  &:hover
+    background: #0095d0
+    background: -webkit-linear-gradient(top, #37bde0, #0095d0)
+    background: -webkit-linear-gradient(top, #37bde0, #0095d0)
+    background: -moz-linear-gradient(top, #37bde0, #0095d0)
+    background: -o-linear-gradient(top, #37bde0, #0095d0)
+
+
+
+section
+  padding: 75px 0
+
+  &.models
+    background: url('/images/models_bg_big.png')
+    background-position: center
+    min-height: 548px
+
+
+  &.samples
+    background: url('/images/geometry.png')
+
+  .title
+    font-size: 36px
+    font-family: "GothamProMed"
+    line-height: 1.3
+    color: #212426
+    text-align: center
+    margin-bottom: 75px
+
+
+
+.why
+  .triggers
+    width: 900px
+    margin: 0px auto
+    .trigger
+      float: left
+      position: relative
+      width: 450px
+      height: 120px
+
+      .icon
+        position: absolute
+        top: 0px
+        left: 0px
+        width: 55px
+        height: 55px
+      .body
+        padding-left: 70px
+        font-size: 14px
+        color: #373c40
+        padding-top: 5px
+        .name
+          padding-bottom: 20px
+          font-size: 18px
+
+
+
+.form-area
+  width: 100%
+  height: 354px
+  background: url('/images/form_background.png') no-repeat
+  background-position: center
+  padding-top: 90px
+
+  .form-title
+    font-family: 'GothamProMed'
+    font-size: 36px
+    color: #fff
+    text-align: center
+
+  .form-subtitle
+    padding-top: 20px
+    font-size: 18px
+    color: #fff
+    line-height: 1.3
+    text-align: center
+
+.form
+  margin: 60px auto
+  width: 700px
+  padding: 0px 40px
+  height: 115px
+  background: rgba(0,0,0, 0.1)
+  border-radius: 20px
+  box-shadow: 0 0 101 rgba(0,0,0, 0.15) inner
+  box-shadow: 0 0 1px rgba(255,255,255, 0.5)
+
+  input
+    width: 220px
+    height: 45px
+    border: 1px solid #ccd1d2
+    border-radius: 7px
+    margin-top: 35px
+    margin-right: 10px
+    font-family: 'GothamProReg'
+    color: #373c40
+    font-size: 14px
+    text-align: center
+    outline: none
+
+  .button
+    display: inline-block
+    width: 220px
+    margin-left: 10px
+    background: #8ebd1f
+    background: -webkit-linear-gradient(top, #c1db30, #8ebd1f)
+    background: -webkit-linear-gradient(top, #c1db30, #8ebd1f)
+    background: -moz-linear-gradient(top, #c1db30, #8ebd1f)
+    background: -o-linear-gradient(top, #c1db30, #8ebd1f)
+    color: #373c40
+
+    &:hover
+      background: #98c71f
+      background: -webkit-linear-gradient(top, #cbe530, #98c71f)
+      background: -webkit-linear-gradient(top, #cbe530, #98c71f)
+      background: -moz-linear-gradient(top, #cbe530, #98c71f)
+      background: -o-linear-gradient(top, #cbe530, #98c71f)
+
+
+
+.offices
+  .office
+    width: 300px
+    float: left
+    margin-right: 20px
+    margin-bottom: 70px
+
+    &.bottom
+      margin-bottom: 0px
+
+
+    .name
+      font-size: 24px
+      color: #0082c8
+
+    .metro-title
+      font-size: 15px
+      color: #8e9499
+      padding: 30px 0
+
+    .metro-stations
+      .metro
+        font-size: 15px
+        color: #373c40
+        height: 20px
+        line-height: 20px
+        padding-left: 35px
+        margin-bottom: 10px
+        background: url('/images/metro_icon.png') no-repeat
+
+        .distance
+          color: #8e9499
+
+
+    .phone
+      font-size: 15px
+      color: #8e9499
+      padding-top: 25px
+      line-height: 1.3
+
+      .number
+        font-size: 24px
+        color: #373c40
+
+
+    .address
+      font-size: 15px
+      color: #8e9499
+      padding-top: 25px
+      line-height: 1.3
+
+      .street
+        color: #373c40
+
+
+    .rejim
+      font-size: 15px
+      color: #8e9499
+      padding-top: 25px
+      line-height: 1.3
+
+
+      .dates
+        padding-top: 25px
+        color: #373c40
+
+
+
+
+.footer
+  background: #008cd2
+  height: 120px
+
+  .left
+    float: left
+    color: #fff
+    font-size: 14px
+    line-height: 1.3
+    padding-top: 35px
+
+  .right
+    float: right

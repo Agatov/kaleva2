@@ -1,0 +1,15 @@
+%section.samples
+  .wrapper
+    .title
+      Примеры конфигураций
+
+    .samples-area.clearfix
+      .arrow-area.left
+        .arrow.left#prev-sample
+      .arrow-area.right
+        .arrow.right#next-sample
+
+      .samples#samples
+        = haml :'samples/sample1'
+        = haml :'samples/sample2'
+        = haml :'samples/sample3'
